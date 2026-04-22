@@ -1,0 +1,89 @@
+/* ===== App Layout & Shared Styles ===== */
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+/* Section dividers */
+.section-divider {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+  position: relative;
+}
+
+.section-divider::after {
+  content: '';
+  display: block;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--border-default) 20%,
+    var(--cyan-600) 50%,
+    var(--border-default) 80%,
+    transparent
+  );
+  opacity: 0.5;
+}
+
+/* Footer */
+.app-footer {
+  margin-top: var(--space-3xl);
+  padding: var(--space-2xl) 0 var(--space-xl);
+  background: rgba(10, 22, 40, 0.6);
+  border-top: 1px solid var(--border-subtle);
+}
+
+.app-footer__inner {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--space-2xl);
+  margin-bottom: var(--space-xl);
+}
+
+.app-footer__logo {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 1.2rem;
+  background: linear-gradient(135deg, var(--text-primary), var(--cyan-300));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: block;
+  margin-bottom: var(--space-sm);
+}
+
+.app-footer__brand p,
+.app-footer__info p,
+.app-footer__methods p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.app-footer__label {
+  font-weight: 600;
+  color: var(--text-secondary) !important;
+  margin-bottom: var(--space-xs);
+  text-transform: uppercase;
+  font-size: 0.75rem !important;
+  letter-spacing: 0.04em;
+}
+
+.app-footer__bottom {
+  padding-top: var(--space-lg);
+  border-top: 1px solid var(--border-subtle);
+  text-align: center;
+}
+
+.app-footer__bottom p {
+  font-size: 0.8rem;
+  color: var(--gray-500);
+}

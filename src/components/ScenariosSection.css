@@ -1,0 +1,103 @@
+.scenarios {
+  padding: 5rem 0;
+}
+
+.scenarios__grid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xl);
+}
+
+.scenarios__card {
+  padding: 0;
+  overflow: hidden;
+  animation: fadeInUp 0.6s ease forwards;
+  opacity: 0;
+}
+
+.scenarios__card-header {
+  padding: var(--space-xl) var(--space-2xl);
+  background: linear-gradient(135deg, rgba(21,101,192,0.2), rgba(0,188,212,0.08));
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.scenarios__card-title {
+  font-size: 1.4rem;
+  margin: var(--space-sm) 0 var(--space-xs);
+  color: var(--text-primary);
+}
+
+.scenarios__card-subtitle {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.scenarios__card-body {
+  padding: var(--space-xl) var(--space-2xl);
+}
+
+.scenarios__desc {
+  color: var(--text-secondary);
+  font-size: 0.92rem;
+  line-height: 1.7;
+  margin-bottom: var(--space-xl);
+}
+
+.scenarios__table-wrapper {
+  margin-bottom: var(--space-xl);
+  overflow-x: auto;
+}
+
+.scenarios__req-row td {
+  border-top: 2px solid var(--cyan-600) !important;
+  background: rgba(0, 188, 212, 0.05);
+}
+
+.scenarios__equations {
+  margin-bottom: var(--space-xl);
+  padding: var(--space-lg);
+  background: rgba(13, 40, 71, 0.5);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-subtle);
+}
+
+.scenarios__equations-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--cyan-400);
+  margin-bottom: var(--space-md);
+}
+
+.scenarios__equation {
+  margin: var(--space-sm) 0;
+}
+
+.scenarios__condition {
+  padding: var(--space-lg);
+  background: rgba(0, 188, 212, 0.05);
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(0, 188, 212, 0.12);
+}
+
+.scenarios__condition-label {
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-bottom: var(--space-sm);
+  color: var(--text-primary);
+}
+
+.scenarios__condition p {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .scenarios__card-header,
+  .scenarios__card-body {
+    padding: var(--space-lg);
+  }
+}

@@ -1,0 +1,261 @@
+.calculator {
+  padding: 5rem 0;
+}
+
+.calc__presets {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+  margin-bottom: var(--space-xl);
+}
+
+.calc__presets-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin-right: var(--space-sm);
+}
+
+.calc__layout {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: var(--space-xl);
+  align-items: start;
+}
+
+.calc__input-panel,
+.calc__config-panel {
+  padding: var(--space-xl);
+}
+
+.calc__panel-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: var(--space-lg);
+  color: var(--text-primary);
+}
+
+/* Matrix grid */
+.calc__matrix-header {
+  display: grid;
+  grid-template-columns: 130px repeat(4, 1fr);
+  gap: var(--space-sm);
+  margin-bottom: var(--space-sm);
+}
+
+.calc__matrix-corner {
+  /* empty */
+}
+
+.calc__matrix-col-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  text-align: center;
+  letter-spacing: 0.04em;
+}
+
+.calc__matrix-row {
+  display: grid;
+  grid-template-columns: 130px repeat(4, 1fr);
+  gap: var(--space-sm);
+  margin-bottom: var(--space-sm);
+  align-items: center;
+}
+
+.calc__matrix-row-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
+.calc__matrix-input {
+  text-align: center;
+  padding: 0.45rem 0.5rem;
+  font-size: 0.88rem;
+}
+
+.calc__matrix-input--b {
+  border-color: rgba(0, 188, 212, 0.35);
+  background: rgba(0, 188, 212, 0.06);
+}
+
+/* Condition number */
+.calc__condition {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-top: var(--space-lg);
+  padding: var(--space-md);
+  background: rgba(13, 40, 71, 0.5);
+  border-radius: var(--radius-sm);
+}
+
+.calc__condition-label {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.calc__condition-value {
+  font-weight: 700;
+  font-family: var(--font-heading);
+}
+
+.calc__condition-value--good {
+  color: var(--success);
+}
+
+.calc__condition-value--warn {
+  color: var(--warning);
+}
+
+.calc__condition-value--bad {
+  color: var(--danger);
+}
+
+/* Config panel */
+.calc__field {
+  margin-bottom: var(--space-lg);
+}
+
+.calc__field-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-md);
+}
+
+.calc__field-hint {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: var(--space-xs);
+}
+
+.calc__solve-btn {
+  width: 100%;
+  padding: 0.85rem;
+  font-size: 1rem;
+  margin-top: var(--space-sm);
+}
+
+/* Results */
+.calc__result {
+  margin-top: var(--space-xl);
+  padding: var(--space-lg);
+  border-radius: var(--radius-md);
+  animation: fadeInUp 0.4s ease forwards;
+}
+
+.calc__result--ok {
+  background: rgba(16, 185, 129, 0.06);
+  border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.calc__result--fail {
+  background: rgba(239, 68, 68, 0.06);
+  border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+.calc__result-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-lg);
+}
+
+.calc__result-time {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.calc__result-title {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  margin-bottom: var(--space-md);
+}
+
+.calc__result-vars {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.calc__result-var {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-sm) var(--space-md);
+  background: rgba(21, 101, 192, 0.1);
+  border-radius: var(--radius-sm);
+}
+
+.calc__result-val {
+  font-family: 'Courier New', monospace;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--cyan-300);
+}
+
+.calc__result-unit {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.calc__result-meta {
+  display: flex;
+  gap: var(--space-xl);
+  margin-top: var(--space-lg);
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.calc__result-clinical {
+  margin-top: var(--space-lg);
+  padding: var(--space-lg);
+  background: rgba(0, 188, 212, 0.06);
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(0, 188, 212, 0.12);
+}
+
+.calc__result-clinical p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.calc__result-warning {
+  color: var(--warning) !important;
+  margin-top: var(--space-md);
+}
+
+@media (max-width: 900px) {
+  .calc__layout {
+    grid-template-columns: 1fr;
+  }
+
+  .calc__matrix-header,
+  .calc__matrix-row {
+    grid-template-columns: 90px repeat(4, 1fr);
+  }
+
+  .calc__matrix-row-label {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 500px) {
+
+  .calc__matrix-header,
+  .calc__matrix-row {
+    grid-template-columns: 70px repeat(4, 1fr);
+    gap: 4px;
+  }
+
+  .calc__matrix-input {
+    padding: 0.35rem 0.25rem;
+    font-size: 0.78rem;
+  }
+}

@@ -1,0 +1,42 @@
+.planes-viz {
+  padding: 5rem 0;
+}
+
+.planes-viz__tabs {
+  display: flex;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-xl);
+  flex-wrap: wrap;
+}
+
+.planes-viz__chart {
+  padding: var(--space-md);
+  overflow: hidden;
+  margin-bottom: var(--space-xl);
+}
+
+.planes-viz__chart .js-plotly-plot {
+  border-radius: var(--radius-md);
+}
+
+.planes-viz__legend {
+  display: flex;
+  gap: var(--space-xl);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.planes-viz__legend-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+}
+
+.planes-viz__dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}

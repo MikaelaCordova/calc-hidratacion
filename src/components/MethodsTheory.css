@@ -1,0 +1,227 @@
+.theory {
+  padding: 5rem 0;
+}
+
+.theory__tabs {
+  display: flex;
+  gap: var(--space-xs);
+  margin-bottom: var(--space-xl);
+  flex-wrap: wrap;
+  border-bottom: 1px solid var(--border-subtle);
+  padding-bottom: var(--space-md);
+}
+
+.theory__tab {
+  padding: 0.5rem 1rem;
+  border: none;
+  background: none;
+  color: var(--text-muted);
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: var(--radius-md) var(--radius-md) 0 0;
+  transition: all var(--transition-fast);
+  position: relative;
+}
+
+.theory__tab:hover {
+  color: var(--text-primary);
+  background: rgba(66, 165, 245, 0.08);
+}
+
+.theory__tab--active {
+  color: var(--cyan-300);
+  background: rgba(0, 188, 212, 0.1);
+}
+
+.theory__tab--active::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--cyan-400);
+  border-radius: 2px;
+}
+
+.theory__content {
+  padding: var(--space-2xl);
+  animation: fadeIn 0.3s ease forwards;
+}
+
+.theory__header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  margin-bottom: var(--space-lg);
+}
+
+.theory__title {
+  font-size: 1.5rem;
+  color: var(--text-primary);
+}
+
+.theory__desc {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: var(--space-xl);
+}
+
+/* Formula */
+.theory__formula-box {
+  padding: var(--space-lg);
+  background: rgba(13, 40, 71, 0.5);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-subtle);
+  text-align: center;
+  margin-bottom: var(--space-xl);
+}
+
+.theory__formula-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--cyan-400);
+  margin-bottom: var(--space-md);
+}
+
+/* Pseudocode */
+.theory__pseudo-box {
+  margin-bottom: var(--space-xl);
+}
+
+.theory__pseudo-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--cyan-400);
+  margin-bottom: var(--space-sm);
+}
+
+.theory__pseudo-code {
+  background: rgba(10, 22, 40, 0.8);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+  font-family: 'Courier New', monospace;
+  font-size: 0.85rem;
+  color: var(--blue-200);
+  line-height: 1.8;
+  overflow-x: auto;
+  white-space: pre;
+}
+
+/* Pros/Cons */
+.theory__proscons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-lg);
+}
+
+.theory__pros,
+.theory__cons {
+  padding: var(--space-lg);
+  border-radius: var(--radius-md);
+}
+
+.theory__pros {
+  background: rgba(16, 185, 129, 0.06);
+  border: 1px solid rgba(16, 185, 129, 0.15);
+}
+
+.theory__cons {
+  background: rgba(239, 68, 68, 0.06);
+  border: 1px solid rgba(239, 68, 68, 0.15);
+}
+
+.theory__pros h4,
+.theory__cons h4 {
+  font-size: 0.95rem;
+  margin-bottom: var(--space-md);
+  color: var(--text-primary);
+}
+
+.theory__pros ul,
+.theory__cons ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.theory__pros li,
+.theory__cons li {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  padding-left: var(--space-lg);
+  position: relative;
+}
+
+.theory__pros li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--success);
+  font-weight: bold;
+}
+
+.theory__cons li::before {
+  content: '✗';
+  position: absolute;
+  left: 0;
+  color: var(--danger);
+  font-weight: bold;
+}
+
+/* References */
+.theory__references {
+  padding: var(--space-xl);
+  margin-top: var(--space-2xl);
+}
+
+.theory__references h4 {
+  font-size: 1.05rem;
+  margin-bottom: var(--space-md);
+  color: var(--text-primary);
+}
+
+.theory__references ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.theory__references li {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  padding-left: var(--space-lg);
+  position: relative;
+}
+
+.theory__references li::before {
+  content: '▪';
+  position: absolute;
+  left: 0;
+  color: var(--cyan-400);
+}
+
+.theory__references em {
+  color: var(--text-muted);
+}
+
+@media (max-width: 768px) {
+  .theory__content {
+    padding: var(--space-lg);
+  }
+  .theory__proscons {
+    grid-template-columns: 1fr;
+  }
+}

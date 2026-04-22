@@ -1,0 +1,107 @@
+.comparison {
+  padding: 5rem 0;
+}
+
+.comparison__kappas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--space-lg);
+  margin-bottom: var(--space-2xl);
+}
+
+.comparison__kappa {
+  padding: var(--space-lg);
+  text-align: center;
+}
+
+.comparison__kappa-label {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: var(--space-sm);
+  font-weight: 600;
+}
+
+.comparison__kappa-value {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--cyan-300);
+}
+
+.comparison__cta {
+  text-align: center;
+  padding: var(--space-3xl) 0;
+}
+
+.comparison__cta-hint {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-top: var(--space-md);
+}
+
+.comparison__table-wrapper {
+  overflow-x: auto;
+  margin-bottom: var(--space-2xl);
+}
+
+.comparison__table {
+  min-width: 800px;
+}
+
+.comparison__conv-yes {
+  color: var(--success);
+  font-weight: 600;
+}
+
+.comparison__conv-no {
+  color: var(--danger);
+  font-weight: 600;
+}
+
+.comparison__solutions {
+  margin-top: var(--space-xl);
+}
+
+.comparison__solutions-title {
+  font-size: 1.2rem;
+  color: var(--text-primary);
+  margin-bottom: var(--space-lg);
+}
+
+.comparison__solutions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--space-lg);
+}
+
+.comparison__solution-card {
+  padding: var(--space-lg);
+}
+
+.comparison__solution-label {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--cyan-400);
+  margin-bottom: var(--space-md);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.comparison__solution-var {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-sm) 0;
+  border-bottom: 1px solid var(--border-subtle);
+  font-size: 0.9rem;
+}
+
+.comparison__solution-var:last-child {
+  border-bottom: none;
+}
+
+.comparison__solution-val {
+  font-family: 'Courier New', monospace;
+  font-weight: 700;
+  color: var(--text-primary);
+}

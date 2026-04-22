@@ -1,0 +1,48 @@
+.convergence {
+  padding: 5rem 0;
+}
+
+.convergence__tabs {
+  display: flex;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-xl);
+  flex-wrap: wrap;
+}
+
+.convergence__chart {
+  padding: var(--space-md);
+  margin-bottom: var(--space-xl);
+}
+
+.convergence__info {
+  padding: var(--space-xl);
+}
+
+.convergence__info h4 {
+  font-size: 1.05rem;
+  color: var(--text-primary);
+  margin-bottom: var(--space-md);
+}
+
+.convergence__info ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.convergence__info li {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  padding-left: var(--space-lg);
+  position: relative;
+}
+
+.convergence__info li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: var(--cyan-400);
+  font-weight: bold;
+}
