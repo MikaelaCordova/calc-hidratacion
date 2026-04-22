@@ -7,7 +7,7 @@ HidraCalc es una aplicación web interactiva orientada a la medicina clínica, d
 ## Documentación y Teoría
 
 Toda la fundamentación teórica, el planteamiento del problema clínico (balance de sodio, potasio y glucosa) y la justificación detallada de la arquitectura matemática se encuentran en el siguiente enlace:
-**[Ver Documentación y Marco Teórico (PDF)](https://drive.google.com)**
+**[Ver Documentación y Marco Teórico (PDF)](./docs/documentacion.pdf)**
 
 ## Características Principales
 
