@@ -7,7 +7,7 @@ HidraCalc es una aplicación web interactiva orientada a la medicina clínica, d
 ## Documentación y Teoría
 
 Toda la fundamentación teórica, el planteamiento del problema clínico (balance de sodio, potasio y glucosa) y la justificación detallada de la arquitectura matemática se encuentran en el siguiente enlace:
-**[Ver Documentación y Marco Teórico (PDF)](https://drive.google.com/drive/folders/1qNYSM1ficWc42fgp8uJY89Xkr8IDYTyJ)**
+**[Ver Documentación y Marco Teórico (PDF)](https://drive.google.com)**
 
 ## Características Principales
 
@@ -19,7 +19,7 @@ Toda la fundamentación teórica, el planteamiento del problema clínico (balanc
   - *Técnicas Modernas*: Gradiente Conjugado Precondicionado (maneja matrices no simétricas mediante ecuaciones normales).
 - **Visualización 3D**: Representación interactiva con Plotly.js de los planos formados por cada balance de nutrientes.
 - **Gráficos de Convergencia**: Monitoreo dinámico del residuo $||b - Ax||_2$ vs. iteraciones.
-- **Escenarios Preconfigurados**: Tres casos clínicos específicos (Bien condicionado, Estrés, Mal condicionado) para demostrar la robustez de los algoritmos numéricos.
+- **Escenarios Preconfigurados**: Tres casos clínicos específicos (Bien condicionado, Estrés, Mal condicionado)
 
 ## Stack Tecnológico
 
